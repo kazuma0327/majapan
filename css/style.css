@@ -1,0 +1,154 @@
+@charset "utf-8";
+*{margin:0;padding:0;}
+body{
+	font: 15px "游ゴシック","YuGothic","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","ＭＳ Ｐゴシック","MS PGothic","メイリオ","Meiryo",arial,Osaka,Sans-Serif;
+	color:#443f3f;
+	min-width:1080px;
+	line-height: 1.8em;
+	position: relative;
+}
+a{
+	text-decoration:none;
+	color:#1d2088;
+}
+a:hover{
+	color: #CB99CA;
+	text-decoration:none;
+}
+a:active, a:focus{
+	outline: 0;
+}
+a:hover img{
+	opacity:0.9;
+	filter:alpha(opacity=90);
+	-ms-filter: “alpha( opacity=90 )”;
+}
+img{
+	border:0;
+}
+ul,li{
+	list-style: none;
+}
+.clear{
+	clear:both;
+}
+.center{
+	text-align:center;
+}
+.left{
+	text-align: left;
+}
+.right{
+	text-align: right;
+}
+
+/* PC専用 */
+.pcnon{
+	display: none;
+}
+
+/* ヘッダー */
+h1{
+	text-align:center;
+	font-size: 12px;
+	font-weight: normal;
+}
+h2{
+	text-align:center;
+	padding-top: 15px;
+}
+h2 img{
+	width: 189px;
+}
+
+@charset "utf-8";
+
+*{margin:0;padding:0;}
+
+/* メニュー */
+
+/*menu*/
+.menu{
+    height: 20px;
+    position: absolute;
+    right: 20px;
+    top: 55px;
+    width: 30px;
+    z-index: 99;
+		cursor: pointer;
+		display: none
+}
+.menu__line{
+    background: white;
+    display: block;
+    height: 2px;
+    position: absolute;
+    transition:transform .3s;
+    width: 100%;
+}
+.menu__line--center{
+    top: 9px;
+}
+.menu__line--bottom{
+    bottom: 0;
+}
+.menu__line--top.active{
+    top: 8px;
+    transform: rotate(45deg);
+}
+.menu__line--center.active{
+    transform:scaleX(0);
+}
+.menu__line--bottom.active{
+    bottom: 10px;
+    transform: rotate(135deg);
+}
+/*gnav*/
+.gnav{
+    background: rgba(0,0,0,0.8);
+    display: none;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: 98;
+    top: 0;
+}
+.gnav__wrap{
+    align-items:center;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+}
+.gnav__menu__item{
+    margin: 40px 0;
+}
+.gnav__menu__item a{
+	color: #fff;
+    font-size: 2em;
+    font-weight: bold;
+    padding: 40px;
+	text-decoration: none;
+    transition: .5s;
+}
+.gnav__menu__item a:hover{
+    color: #666;
+}
+
+
+/* メイン */
+.inner{
+	width:1030px;
+	margin:0 auto;
+}
+
+/* フッター */
+.footlogo{
+	background: #eee;
+	text-align: center;
+	margin-top: 70px;
+	padding: 20px 0 18px;
+}
+.footlogo img{
+	width: 189px;
+}

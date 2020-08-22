@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:og="http://ogp.me/ns#">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+  <title>株式会社MA-JAPAN</title>
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta http-equiv="content-style-type" content="text/css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" media="screen and (min-width: 899px)"/>
+  <link rel="stylesheet" type="text/css" href="css/sp.css" media="screen and (max-width: 900px)"/>
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <link rel="stylesheet" type="text/css" href="css/responsive.css">
+  <link rel="stylesheet" type="text/css" href="css/service.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script type="text/javascript" src="js/common.js"></script>
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <link rel="icon" href="img/favicon.ico">
+  <script>
+  $(function(){
+    click_menu();
+  });
+
+  function click_menu(){
+    $('a[href^="#"]').click(function(){
+      var speed = 1000;
+      var href = $(this).attr("href");
+      var target = $(href == "#" || href == "" ? 'html' : href);
+      var position = target.offset().top;
+      $('body,html').animate({scrollTop:position}, speed, 'swing');
+      return false;
+    });
+  }
+
+  window.onload = function() {
+    let spinner = document.getElementById('my-spinner');
+
+    // .box に .loaded を追加してローディング表示を消す
+    spinner.classList.add('loaded');
+  }
+
+</script>
+</head>
+<body>
+  <div id="my-spinner" class="box">
+    <!-- type1 〜 type8 はお好みで -->
+    <div class="spinner type1">
+      <span>Loading...</span>
+    </div>
+  </div>
+  <div id="main_company">
+    <header>
+      <!-- ヘッダー部分 -->
+      <div id="main_header">
+        <!-- <a href="index.html"><p class="main_header_logo">MA-JAPAN</p></a> -->
+        <div id="main_header_logo">
+          <a href="index.html"><img src="img/white_logo.jpg" alt="ヘッダーロゴ"></a>
+          <div id="logo_font">
+          </div>
+        </div>
+        <div id="main_header_info">
+          <ul class="header_menu">
+            <li class="btn1"><a href="company.html">COMPANY PROFILE</a></li>
+            <li class="btn2"><p>SERVICE</p></li>
+            <li class="btn3"><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- ここからメイン部分 -->
+      <a class="menu">
+        <span class="menu__line menu__line--top"></span>
+        <span class="menu__line menu__line--center"></span>
+        <span class="menu__line menu__line--bottom"></span>
+      </a>
+      <nav class="gnav">
+        <div class="gnav__wrap">
+          <ul class="gnav__menu">
+            <li class="gnav__menu__item"><a href="company.html">COMPANY PROFILE</a></li>
+            <li class="gnav__menu__item"><a href="service.html">SERVICE</a></li>
+            <li class="gnav__menu__item"><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div id="company_font">
+      <p classs="main_l">サービス</p>
+      <div id="scroll_service">
+        <a href="#services"><span></span>Scroll</a>
+      </div>
+    </div><!-- inner -->
+    <div id="services">
+      <div id="navi">
+        <div id="people">
+          <img src="img/04.png" alt="">
+        </div>
+        <div id="right">
+          <img src="img/right.png" alt="">
+        </div>
+        <div id="navi_all_font">
+          <p class="navi_font">セールスプロモーション</p>
+          <p class="navi_second_font">
+            ここにサービスの内容をいれていきます。ここにサービスの内容をいれていきます。</br>
+            ここにサービスの内容をいれていきます。</br>
+            ここにサービスの内容をいれていきます。</br>
+            ここにサービスの内容をいれていきます。</br>
+          </p>
+        </div>
+      </div>
+      <div id="navi_k">
+        <div id="people">
+          <img src="img/03.png" alt="">
+        </div>
+        <div id="right">
+          <img src="img/right.png" alt="">
+        </div>
+        <div id="navi_all_font">
+          <p class="navi_font">コンサルティング</p>
+          <p class="navi_second_font">
+            ここにサービスの内容をいれていきます。ここにサービスの内容をいれていきます。</br>
+            ここにサービスの内容をいれていきます。</br>
+            ここにサービスの内容をいれていきます。</br>
+            ここにサービスの内容をいれていきます。</br>
+          </p>
+        </div>
+      </div>
+      <div id="coming">
+        <p>ComingSoon</p>
+      </div>
+      <div id="navi_y">
+        <div id="people">
+          <img src="img/02.png" alt="">
+        </div>
+        <div id="right">
+          <img src="img/right.png" alt="">
+        </div>
+        <div id="navi_all_font">
+          <p class="navi_font">有料職業紹介業</p>
+          <p class="navi_second_font">
+            ここにサービスの内容をいれていきます。ここにサービスの内容をいれていきます。</br>
+            ここにサービスの内容をいれていきます。</br>
+            ここにサービスの内容をいれていきます。</br>
+            ここにサービスの内容をいれていきます。</br>
+          </p>
+        </div>
+      </div>
+      <div id="navi_j">
+        <div id="people">
+          <img src="img/01.png" alt="">
+        </div>
+        <div id="right">
+          <img src="img/right.png" alt="">
+        </div>
+        <div id="navi_all_font">
+          <p class="navi_font">人材派遣業</p>
+          <p class="navi_second_font">
+            ここにサービスの内容をいれていきます。ここにサービスの内容をいれていきます。</br>
+            ここにサービスの内容をいれていきます。</br>
+            ここにサービスの内容をいれていきます。</br>
+            ここにサービスの内容をいれていきます。</br>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5468.989412065244!2d139.69213723415893!3d35.86037176868187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018954a46670385%3A0x32620290a5b397e2!2z44CSMzM2LTAwNDIg5Z-8546J55yM44GV44GE44Gf44G-5biC5Y2X5Yy65aSn5a2X5aSn6LC35Y-j77yS77yX77yQ77yZ4oiS77yX!5e0!3m2!1sja!2sjp!4v1597190887339!5m2!1sja!2sjp"
+    width="100%" height="600px" frameborder="0" style=filter:grayscale(50%);-webkit-filter:grayscale(50%) allowfullscreen></iframe>
+  </div>
+  <footer class="footer">
+    <div class="footer-left col-md-4 col-sm-6">
+      <p class="about">
+        <span>株式会社MA-JAPANについて</span> ここに簡単な会社の紹介をいれたいです。
+      </p>
+      <!-- <div class="icons">
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-linkedin"></i></a>
+      <a href="#"><i class="fa fa-google-plus"></i></a>
+      <a href="#"><i class="fa fa-instagram"></i></a>
+    </div> -->
+  </div>
+  <div class="footer-center col-md-4 col-sm-6">
+    <img src="img/map.png" alt="tel.png">
+    <div id="icon">
+      <p><span> 〒336-0042</span> 埼玉県さいたま市南区大字大谷口2709-7</p>
+    </div>
+    <img src="img/tel.png" alt="tel.png">
+    <div id="icon">
+      <p> 048-707-5849</p>
+    </div>
+    <img src="img/mail.png" alt="tel.png">
+    <div id="icon">
+      <p><a href="#">info@ma-japan.jp</a></p>
+    </div>
+  </div>
+  <div class="footer-right col-md-4 col-sm-6">
+    <img src="img/white_logo.jpg" alt=""></a>
+  </div>
+</footer>
+<div class="clear"></div>
+</body>
+</html>

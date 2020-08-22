@@ -1,0 +1,228 @@
+@charset "UTF-8";
+
+/*---Reset---*/
+body, h1, h2, h3, h4, h5, h6, p, address,
+ul, ol, li, dl, dt, dd, img, form, table, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 100%;
+	text-align: left;
+	list-style-type: none;
+	border-collapse: collapse;
+}
+
+textarea { font-size: 100%; vertical-align:middle;}
+img { border-style: none; display: block; }
+hr { display: none; }
+em{font-style: normal}
+input{line-height:auto;vertical-align:middle;}
+strong.more{color:#c30}
+a{text-decoration: none;}
+
+html {
+}
+
+body {
+	font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+}
+
+/*クラス定義*/
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+
+.clearfix {
+	display: inline-table;
+}
+
+/* Hides from IE-mac \*/
+* html .clearfix{height: 1%;}
+*+html .clearfix{min-height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*--- ページ基本デザイン ---*/
+
+#main_company {
+	background-image: url(../img/markus-spiske-s7nlaF3kefg-unsplash.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	background-attachment: fixed;
+	height: 100%;
+	/* -webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	filter: grayscale(100%); */
+	position: relative;
+}
+
+#navi {
+	margin: 100px auto;
+	width: 70%;
+	background-color: rgba(999, 999, 999, 0.9);
+}
+
+#navi table {
+	/* border-top: 1px solid #e0e0e0; */
+	/* background-color: red; */
+	margin: 0 auto;
+	width: 920px;
+}
+
+#navi tr {
+	border-bottom: 1px solid #494949;
+}
+
+#navi tr:last-child {
+	border-bottom: none;
+}
+
+#navi th {
+	width: 150px;
+	/* background-color: blue; */
+	text-align: left;
+	font-family: serif;
+
+}
+
+#navi td {
+	line-height: 25px;
+	padding: 20px 0;
+	font-family: serif;
+}
+
+#company_font {
+	margin: 200px auto 466px auto;
+}
+
+#company_font  p{
+	font-size: 40px;
+	font-weight: 200;
+	line-height: 1.33333333;
+	letter-spacing: 0.1em;
+	text-align: center;
+	font-family: 'Roboto Slab', serif;
+	width: 314px;
+	margin: 0 auto;
+	color: #EEEEEE;
+}
+
+#main_header_info .btn1 p{
+	border-bottom: 1px solid white;
+	color: white;
+	font-size: 14px;
+	line-height: 15px;
+	/* font-family: sans-serif; */
+	font-family: 'Roboto Slab', serif;
+	letter-spacing: 0.12em;
+}
+
+#map {
+	width: 100%;
+	background-color: #414141;
+}
+
+#scroll_company {
+	/* padding-top: 30px; */
+	margin: 244px auto 0 auto;
+	text-align: center;
+}
+ #scroll_company a {
+  /* padding-top: 70px; */
+	color: white;
+}
+
+#scroll_company a span {
+  position: absolute;
+  top: 21%;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid white;
+  border-bottom: 1px solid white;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb 1.5s infinite;
+  animation: sdb 1.5s infinite;
+  box-sizing: border-box;
+}
+@-webkit-keyframes sdb {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+@keyframes sdb {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 900px) {
+	#navi table {
+		width: 80%;
+	}
+
+	#navi tr {
+		display: block;
+		border-bottom: none;
+	}
+
+	#navi th {
+		display: block;
+		border-bottom: 1px solid black;
+		width: 100%;
+	}
+
+	#navi {
+	padding: 30px 0 10px 0;
+	}
+
+	#scroll_company a span{
+		top: 19%;
+	}
+
+}
+
+@media (max-width: 650px) {
+	#navi {
+		width: 100%;
+	}
+	#company_font p {
+		width: 100%;
+	}
+}
