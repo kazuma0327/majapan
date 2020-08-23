@@ -63,9 +63,7 @@ body {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	width: 100%;
 	background-attachment: fixed;
-	height: 100%;
 	/* -webkit-filter: grayscale(100%);
 	-moz-filter: grayscale(100%);
 	-ms-filter: grayscale(100%);
