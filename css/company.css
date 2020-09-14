@@ -75,6 +75,27 @@ body {
 	z-index: -1;
 }
 
+#copany_g {
+	width: 70%;
+	background-color: rgba(999, 999, 999, 0.9);
+	margin: 0 auto;
+	padding: 40px;
+	border-radius: 10px;
+}
+
+.border{
+	color: rgb(2, 5, 0);
+	border-bottom: 1px solid black;
+	width: 165px;
+	font-size: 20px;
+}
+
+#copany_g p{
+	padding-top: 10px;
+	color: rgb(2, 5, 0);
+	font-family: 'Roboto Slab', serif;
+}
+
 #navi {
 	margin: 100px auto;
 	width: 70%;
@@ -153,7 +174,7 @@ body {
 
 #scroll_company a span {
   position: absolute;
-  top: 21%;
+  top: 19%;
   left: 50%;
   width: 24px;
   height: 24px;
@@ -214,7 +235,7 @@ body {
 	}
 
 	#scroll_company a span{
-		top: 19%;
+		top: 17%;
 	}
 
 }
@@ -223,7 +244,13 @@ body {
 	#navi {
 		width: 100%;
 	}
+	#copany_g {
+		width: 100%;
+	}
 	#company_font p {
 		width: 100%;
+	}
+	#scroll_company a span{
+		top: 14%;
 	}
 }
