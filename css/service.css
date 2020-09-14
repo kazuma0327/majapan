@@ -75,6 +75,7 @@ body {
 	z-index: -1;
 }
 
+
 #navi {
 	background-color: #167288;
 	/* background:rgba(53,92,125,1); */
@@ -100,6 +101,22 @@ body {
 	margin: 92px 15px;
 }
 
+#people_coming img {
+	margin: 0 auto;
+	width: 150px;
+	height: 150px;
+	margin: 0 auto;
+
+}
+
+#right_coming img {
+	display: none;
+	width: 55px;
+	height: 50px;
+	margin: 92px 15px;
+}
+
+
 #navi_all_font {
 	margin: 20px 0 0 20px;
 }
@@ -120,7 +137,7 @@ body {
 	color: white;
 	font-size: 14px;
 	padding-top: 20px;
-	text-align: center;
+	/* text-align: center; */
 }
 
 #navi_k {
@@ -155,6 +172,7 @@ body {
 	padding: 15px;
 	border-radius: 10px;
 	display: flex;
+	display: block;
 }
 
 #navi_j {
@@ -166,6 +184,7 @@ body {
 	padding: 15px;
 	border-radius: 10px;
 	display: flex;
+	display: block;
 }
 
 
@@ -269,6 +288,17 @@ body {
 	#right img {
 		display: none;
 	}
+
+	#people_coming img {
+		margin: 0 auto;
+		width: 100px;
+		height: 100px;
+	}
+
+	#right_coming img {
+		display: none;
+	}
+
 
 	#navi_all_font .navi_font{
 		font-size: 23px;
