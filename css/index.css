@@ -183,17 +183,17 @@ body {
 }
  #scroll a {
   padding-top: 70px;
-	color: black;
+	color: white;
 }
 #scroll a span {
   position: absolute;
-  top: 90%;
+  top: 59%;
   left: 50%;
   width: 24px;
   height: 24px;
   margin-left: -12px;
-  border-left: 1px solid black;
-  border-bottom: 1px solid black;
+  border-left: 1px solid white;
+  border-bottom: 1px solid white;
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
   -webkit-animation: sdb 1.5s infinite;
@@ -231,11 +231,11 @@ body {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	height: 550px;
+	height: 800px;
 	width: 100%;
 	background: -moz-linear-gradient(top, #555555, #FFF);
 	background: -webkit-linear-gradient(top, #555555, #FFF);
-	background: linear-gradient(to bottom, #555555, #FFF);
+	background: linear-gradient(to bottom, #0c5971, #FFF);
 	margin-bottom: 100px;
 	position: relative;
 }
@@ -322,16 +322,16 @@ body {
 	margin: 200px auto;
 }
 
- #inner  p{
+ #inner p{
 	font-size: 40px;
 	font-weight: 200;
 	line-height: 1.33333333;
 	letter-spacing: 0.1em;
 	text-align: center;
 	font-family: 'Roboto Slab', serif;
-	width: 314px;
-	margin: 0 auto;
-	/* color: #EEEEEE; */
+	/* width: 314px; */
+	margin: 20px auto 0 auto;
+	color: #EEEEEE;
 }
 
 #servise_font {
@@ -392,7 +392,7 @@ body {
 
 
 .btn-flat-simple:hover {
-  background: #FF6928	;
+  background: #0c5971	;
   color: white;
 }
 
